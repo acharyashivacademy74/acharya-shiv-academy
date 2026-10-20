@@ -8,32 +8,120 @@
 <style>
 :root{--g:#142b4a;--g2:#244d78;--p:#edf2f8;--gold:#c8ad70;--ink:#18231f;--muted:#617069;--line:#e0e5ec;--soft:#f6f8fb}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;font:16px/1.65 Arial,Helvetica,sans-serif;color:var(--ink)}a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}.top{background:#0b1b31;color:#e8f1ec;padding:8px 0;font-size:.85rem}.top .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;gap:12px;align-items:center}.logo{background:var(--g);color:white;border:2px solid var(--gold);border-radius:12px;width:48px;height:48px;display:grid;place-items:center;font-weight:800}.brandname{font-weight:800;color:var(--g);font-size:.98rem;line-height:1.2;letter-spacing:.03em}.tag{font-size:.74rem;color:var(--muted);margin-top:4px}.links{display:flex;align-items:center;gap:19px;font-weight:700;font-size:.9rem}.links a:hover{color:var(--g2)}.menu{display:none;background:white;border:1px solid var(--line);padding:9px 12px;border-radius:8px;color:var(--g);font-weight:bold}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;gap:12px;align-items:center;min-width:0}.academy-logo{width:68px;height:80px;display:block;flex-shrink:0}.brandname{font-weight:800;color:var(--g);font-size:.98rem;line-height:1.2;letter-spacing:.03em}.tag{font-size:.74rem;color:var(--muted);margin-top:4px}.links{display:flex;align-items:center;gap:19px;font-weight:700;font-size:.9rem}.links a:hover{color:var(--g2)}.menu{display:none;background:white;border:1px solid var(--line);padding:9px 12px;border-radius:8px;color:var(--g);font-weight:bold}
 .btn{display:inline-flex;justify-content:center;align-items:center;padding:12px 18px;border-radius:8px;font-weight:700;border:1px solid transparent}.primary{background:var(--g);color:#fff}.primary:hover{background:var(--g2)}.outline{border-color:#c1ccda;color:var(--g);background:white}
 .hero{background:linear-gradient(120deg,#f3f6fb,#fff 58%,#edf2f8);padding:70px 0}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}.eyebrow{color:var(--g2);text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;font-weight:800}.eyebrow:before{content:"";display:inline-block;width:25px;height:2px;background:var(--gold);vertical-align:middle;margin-right:9px}h1{font-size:clamp(2.25rem,5vw,4rem);line-height:1.08;letter-spacing:-.04em;color:var(--g);margin:18px 0}h2{font-size:clamp(1.8rem,3.3vw,2.5rem);line-height:1.2;color:var(--g);margin:12px 0}.hero p{font-size:1.08rem;color:var(--muted);max-width:590px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.note{font-size:.88rem;color:var(--muted);margin-top:20px}.photo-wrap{position:relative;padding:0 0 18px 18px}.photo-wrap:before{content:"";position:absolute;inset:18px 18px 0 0;border:2px solid var(--gold);border-radius:18px}.hero img{position:relative;width:100%;height:380px;object-fit:cover;border-radius:18px;background:#dfe7f1}.caption{position:absolute;left:0;bottom:0;background:var(--g);color:#fff;padding:13px 17px;border-radius:9px;font-size:.88rem;font-weight:bold}
 section{padding:72px 0}.head{text-align:center;max-width:720px;margin:0 auto 36px}.head p{color:var(--muted);margin:0}.intro{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}.panel{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:28px}.panel h3,.card h3,.approach h3,.contact h3{color:var(--g);margin-top:0}.checks{list-style:none;padding:0}.checks li{padding:8px 0 8px 26px;position:relative}.checks li:before{content:"✓";position:absolute;left:0;color:var(--g2);font-weight:bold}.courses{background:var(--soft)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:13px;padding:25px}.num{display:grid;place-items:center;width:42px;height:42px;border-radius:10px;background:var(--p);color:var(--g);font-weight:800;margin-bottom:14px}.card p,.approach p,.contact p{color:var(--muted);margin-bottom:0}.approaches{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.approach{padding:22px 4px;border-top:3px solid var(--gold)}.approach h3{margin:12px 0 8px}
 .admission{background:var(--g);color:#fff}.admission h2{color:#fff}.admission .eyebrow{color:#ead8a9}.admission-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px}.admission-copy p{color:#d8e7df}.details{border-top:1px solid #ffffff44;margin-top:22px;padding-top:18px}.details p{margin:8px 0}form{background:#fff;color:var(--ink);border-radius:14px;padding:26px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{min-width:0}.full{grid-column:1/-1}label{display:block;font-size:.87rem;font-weight:700;margin-bottom:6px;color:#34443c}input,select,textarea{width:100%;font:inherit;padding:12px;border:1px solid #cfdad3;border-radius:7px;background:white}input:focus,select:focus,textarea:focus{outline:2px solid #9fc6b0}textarea{min-height:90px;resize:vertical}.small{font-size:.8rem;color:var(--muted);margin:12px 0 16px}.submit{width:100%;cursor:pointer;font:inherit}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact{border:1px solid var(--line);border-radius:14px;padding:25px}.contact .btn{margin:8px 8px 0 0}footer{background:#0b1b31;color:#e5eee9;padding:28px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.mutedfoot{font-size:.84rem;color:#c2d4ca}.wa{position:fixed;right:17px;bottom:17px;z-index:10;background:#16844b;color:#fff;padding:12px 16px;border-radius:999px;box-shadow:0 7px 22px #0003;font-weight:800}
 @media(max-width:900px){.hero-grid,.admission-grid{grid-template-columns:1fr;gap:30px}.cards{grid-template-columns:repeat(2,1fr)}.links{gap:12px}.hero{padding:50px 0}}
-@media(max-width:680px){.top .container{justify-content:center;text-align:center}.nav{min-height:68px;flex-wrap:wrap;padding:10px 0}.menu{display:block}.links{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding-bottom:10px}.links.open{display:flex}.links a{padding:10px 3px;border-top:1px solid var(--line)}.links a.primary{margin-top:8px;text-align:center}.brandname{font-size:.86rem}.tag{font-size:.67rem}.hero{padding:42px 0}.hero img{height:255px}.intro,.cards,.approaches,.contact-grid{grid-template-columns:1fr}section{padding:54px 0}.panel,form{padding:20px}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.foot{display:block}.foot>*+*{margin-top:10px}.wa{right:12px;bottom:12px;font-size:.88rem;padding:11px 14px}}
+@media(max-width:680px){.top .container{justify-content:center;text-align:center}.nav{min-height:68px;flex-wrap:wrap;padding:10px 0}.menu{display:block}.links{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding-bottom:10px}.links.open{display:flex}.links a{padding:10px 3px;border-top:1px solid var(--line)}.links a.primary{margin-top:8px;text-align:center}.academy-logo{width:54px;height:64px}.brandname{font-size:.86rem}.tag{font-size:.67rem}.hero{padding:42px 0}.hero img{height:255px}.intro,.cards,.approaches,.contact-grid{grid-template-columns:1fr}section{padding:54px 0}.panel,form{padding:20px}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.foot{display:block}.foot>*+*{margin-top:10px}.wa{right:12px;bottom:12px;font-size:.88rem;padding:11px 14px}}
 
 /* Contrast and mobile header corrections */
 header{background:#ffffff !important;color:#142b4a}
 header .brandname{color:#142b4a !important;opacity:1}
 header .tag{color:#244d78 !important;background:transparent !important;border-radius:0;padding:0}
 header .nav{background:#ffffff !important}
-header .links{background:#ffffff}
+header .links{background:#0d2544 !important;color:#ffffff !important}
 .hero{background:linear-gradient(120deg,#f3f6fb 0%,#ffffff 65%,#edf2f8 100%) !important}
 .hero h1,.hero h2{color:#142b4a !important}
 .hero p,.hero .note{color:#425267 !important}
 
+
+/* Professional navy, white and gold landing-page treatment */
+:root{--g:#0d2544;--g2:#244c78;--p:#eef2f8;--gold:#e5b94f;--ink:#17263a;--muted:#5d6c7e;--line:#dce3ed;--soft:#f5f7fb}
+.top{background:#091d36;color:#fff}
+.top .container{align-items:center}
+header{background:#fff;border-bottom:1px solid #dce3ed}
+.nav{min-height:104px}
+.academy-logo{width:76px;height:88px}
+.brandname{font-family:Georgia,'Times New Roman',serif;font-size:clamp(1rem,2.4vw,1.65rem);font-weight:900;letter-spacing:.025em;color:#0d2544}
+.tag{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:1rem;color:#0d2544!important}
+.brand-points{font-size:.78rem;color:#244c78;margin-top:8px}
+.admission-badge{background:#f5c84c;color:#0d2544;border-radius:12px;padding:12px 16px;display:flex;flex-direction:column;text-align:center;box-shadow:0 6px 20px #c5a45d33;white-space:nowrap}
+.admission-badge strong{font-size:.95rem}.admission-badge span{font-size:.8rem}
+.links{background:#0d2544;color:white;justify-content:space-around;gap:10px;padding:0 12px}
+.links a{color:#fff !important;padding:13px 8px;display:inline-block}
+.links a:hover{color:#f5c84c !important}
+.links a.primary{background:#e5b94f;color:#0d2544}
+.hero{background:radial-gradient(circle at 82% 48%,#183e65 0,#0d2544 55%,#07182d 100%)!important;color:#fff;padding:62px 0 76px}
+.hero .eyebrow{color:#f5c84c}
+.hero h1{color:#fff!important;font-size:clamp(2.35rem,5.3vw,4.25rem)}
+.hero h1 br{display:block}
+.hero p,.hero .note{color:#e1e8f1!important}
+.hero p{font-size:1.08rem;line-height:1.8}
+.hero .primary{background:#f5c84c;color:#0d2544}
+.hero .outline{background:transparent;border:2px solid #fff;color:#fff}
+.photo-wrap{padding:0 0 18px 18px}
+.photo-wrap:before{border-color:#e5b94f}
+.hero img{height:390px;object-fit:cover;border-radius:14px;box-shadow:0 18px 45px #0004}
+.caption{background:#f5c84c;color:#0d2544}
+.programme-strip{position:relative;margin-top:-42px;z-index:2;background:#fff;border:1px solid #e5e9f0;border-radius:18px;box-shadow:0 15px 38px #0d25441a;display:grid;grid-template-columns:repeat(4,1fr);padding:20px 10px}
+.programme-strip a{display:flex;gap:13px;align-items:center;padding:8px 15px;border-right:1px solid #dce3ed}
+.programme-strip a:last-child{border-right:0}
+.programme-icon{display:grid;place-items:center;flex-shrink:0;width:48px;height:48px;border-radius:50%;background:#f0f2f6;color:#0d2544;font-size:1.45rem;font-weight:bold}
+.programme-strip strong{display:block;color:#0d2544;font-size:.95rem}
+.programme-strip small{display:block;color:#53657c;font-size:.78rem;line-height:1.4;margin-top:3px}
+section#about{padding-top:78px}
+@media(max-width:900px){.nav{flex-wrap:wrap;padding:12px 0}.admission-badge{display:none}.brand-points{display:none}.links{justify-content:flex-start}.programme-strip{grid-template-columns:repeat(2,1fr)}.programme-strip a:nth-child(2){border-right:0}.programme-strip a{border-bottom:1px solid #dce3ed}.programme-strip a:nth-child(n+3){border-bottom:0}.hero img{height:320px}}
+@media(max-width:680px){.top .container{gap:4px;font-size:.72rem}.top .container span:nth-child(2){display:none}.nav{min-height:0;gap:10px}.academy-logo{width:54px;height:64px}.brand{gap:8px;max-width:100%}.brandname{font-size:.92rem}.tag{font-size:.76rem}.menu{margin-left:auto}.links{background:#0d2544}.hero{padding:42px 0 62px}.hero h1{font-size:2.5rem}.hero p{font-size:1rem}.hero img{height:245px}.programme-strip{margin-top:-30px;padding:10px 5px}.programme-strip a{padding:10px 7px;gap:8px}.programme-icon{width:38px;height:38px;font-size:1.1rem}.programme-strip strong{font-size:.82rem}.programme-strip small{font-size:.7rem}}
+
+
+.online-test{background:#eef2f8}
+.test-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;background:#0d2544;color:#fff;padding:36px;border-radius:18px;box-shadow:0 18px 42px #0d254422}
+.test-copy h2{color:#fff;margin:12px 0}.test-copy p{color:#dce6f1;max-width:560px}.test-copy .eyebrow{color:#f5c84c}
+.test-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.test-meta span{font-size:.82rem;background:#ffffff17;border:1px solid #ffffff35;padding:7px 10px;border-radius:99px}
+.test-box{background:#fff;color:#17263a;padding:24px;border-radius:14px}.test-box label{margin-top:8px}.test-box select{margin-bottom:12px}.test-box button{margin-top:8px;background:#e5b94f;color:#0d2544}.test-note{font-size:.78rem;color:#64748b;margin:12px 0 0}
+.quiz-area{background:#fff;border:1px solid #dce3ed;border-radius:14px;padding:24px;margin-top:22px}.quiz-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.quiz-head h3{color:#0d2544;margin:0}.quiz-question{padding:18px 0;border-bottom:1px solid #e1e7ef}.quiz-question p{font-weight:700;margin:0 0 10px}.quiz-option{display:block;padding:7px 0;font-weight:400!important}.quiz-option input{width:auto;margin-right:8px}.quiz-submit{margin-top:20px}.quiz-result{margin-top:18px;background:#edf6ef;border:1px solid #bdd9c4;color:#16472b;border-radius:10px;padding:16px;font-weight:700}
+@media(max-width:800px){.test-panel{grid-template-columns:1fr;padding:22px}.quiz-area{padding:18px}}
+
+
+.question-editor{margin:24px auto 0;background:#fff;border:1px solid #dce3ed;border-radius:14px;padding:20px;max-width:900px}
+.question-editor summary{font-weight:800;color:#0d2544;cursor:pointer;font-size:1.05rem}
+.editor-note{color:#5d6c7e;font-size:.88rem}
+.question-editor form{padding:0;box-shadow:none;margin-top:16px}
+.question-editor textarea{margin-bottom:12px}
+.custom-options{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.custom-options input{margin-bottom:6px}
+.custom-list-head{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-top:22px;padding-top:16px;border-top:1px solid #dce3ed}
+.custom-question-list{font-size:.9rem;color:#425267}
+.custom-question-item{padding:10px 0;border-bottom:1px solid #e5eaf1}
+.custom-question-item button{margin-left:8px;padding:5px 9px;font-size:.8rem}
+@media(max-width:600px){.question-editor{padding:15px}.custom-options{grid-template-columns:1fr}.custom-list-head{align-items:flex-start;flex-direction:column}}
+
+
+/* Final navigation visibility fix */
+header nav.links{background:#0d2544 !important;color:#fff !important}
+header nav.links a{color:#fff !important;opacity:1 !important;visibility:visible !important}
+header nav.links a.primary{background:#e5b94f !important;color:#0d2544 !important}
+@media(max-width:900px){header nav.links{background:#0d2544 !important}}
+@media(max-width:680px){header nav.links{display:none;flex-direction:column;width:100%;background:#0d2544 !important}header nav.links.open{display:flex !important}header nav.links a{display:block;width:100%;color:#fff !important;padding:12px 10px;border-top:1px solid #ffffff33}}
 </style>
 </head>
 <body>
-<div class="top"><div class="container"><span>Academic Excellence · Personal Attention · Strong Foundations</span><span>Laheriasarai, Darbhanga, Bihar</span></div></div>
-<header><div class="container nav"><a class="brand" href="#home"><div class="logo">ASA</div><div><div class="brandname">ACHARYA SHIV ACADEMY</div><div class="tag">Learn with purpose. Grow with confidence.</div></div></a><button class="menu" type="button" aria-expanded="false">Menu ☰</button><nav class="links" aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#courses">Courses</a><a href="#faculty">Faculty</a><a href="#approach">Our Approach</a><a href="#admission">Admission</a><a href="#contact">Contact</a><a class="btn primary" href="#admission">Enquire Now</a></nav></div></header>
+<div class="top"><div class="container"><span>⌖ &nbsp; Laheriasarai, Darbhanga, Bihar</span><span>✦ &nbsp; Academic Excellence · Personal Attention · Strong Foundations</span><span>☎ &nbsp; 9798098535 &nbsp; | &nbsp; 9304224408</span></div></div>
+<header><div class="container nav"><a class="brand" href="#home" aria-label="Acharya Shiv Academy home">
+<svg class="academy-logo" viewBox="0 0 120 140" role="img" aria-label="Acharya Shiv Academy crest logo">
+  <circle cx="60" cy="52" r="43" fill="#fff" stroke="#142b4a" stroke-width="4"/>
+  <circle cx="60" cy="52" r="37" fill="#fff" stroke="#c8ad70" stroke-width="2"/>
+  <path d="M26 66 Q43 59 60 69 Q77 59 94 66 L94 87 Q77 80 60 90 Q43 80 26 87Z" fill="#142b4a"/>
+  <path d="M60 67 L60 88" stroke="#fff" stroke-width="2"/>
+  <path d="M60 24 L60 39 M48 28 L53 41 M72 28 L67 41 M39 37 L48 46 M81 37 L72 46" stroke="#c8ad70" stroke-width="3" stroke-linecap="round"/>
+  <path d="M58 46 L62 46 L64 61 L56 61Z" fill="#142b4a"/>
+  <path d="M18 99 Q60 112 102 99 L96 111 Q60 125 24 111Z" fill="#142b4a" stroke="#c8ad70" stroke-width="2"/>
+  <text x="60" y="107" text-anchor="middle" font-size="8" font-weight="700" fill="#fff">LEARN • GROW • SUCCEED</text>
+  <text x="60" y="132" text-anchor="middle" font-size="10" fill="#142b4a">★ ★ ★</text>
+</svg>
+<div><div class="brandname">ACHARYA SHIV ACADEMY</div><div class="tag">Learn with purpose. Grow with confidence.</div></div>
+</a><button class="menu" type="button" aria-expanded="false">Menu ☰</button><nav class="links" aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About Us</a><a href="#courses">Classes</a><a href="#faculty">Our Faculty</a><a href="#online-test">Self Test Mode</a><a href="#questionEditor">Teacher Corner</a><a href="#approach">Our Approach</a><a href="#admission">Admission</a><a href="#contact">Contact Us</a><a class="btn primary" href="#admission">Enquire Now</a></nav></div></header>
 <main>
-<section class="hero" id="home"><div class="container hero-grid"><div><span class="eyebrow">A focused learning environment</span><h1>Building Knowledge.<br>Shaping Character.</h1><p>At Acharya Shiv Academy, we support students with clear concepts, regular practice and personal attention—helping them develop confidence and a stronger foundation for learning.</p><div class="actions"><a class="btn primary" href="#courses">Explore Courses</a><a class="btn outline" href="#admission">Admission Enquiry</a></div><div class="note">Classes I–X · English Classes XI–XII · Day Boarding Facility</div></div><div class="photo-wrap"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85" alt="Students studying together in a classroom"><div class="caption">A supportive environment for learning and growth</div></div></div></section>
+<section class="hero" id="home"><div class="container hero-grid"><div><span class="eyebrow">A focused learning environment</span><h1>Building Knowledge.<br>Shaping Character.</h1><p>At Acharya Shiv Academy, we support students with clear concepts, regular practice and personal attention—helping them develop confidence and a stronger foundation for learning.</p><div class="actions"><a class="btn primary" href="#courses">Explore Courses</a><a class="btn outline" href="#admission">Admission Enquiry</a></div><div class="note">Classes I–X · English Classes XI–XII · Day Boarding Facility</div></div><div class="photo-wrap"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1100&q=85" alt="Books and learning materials arranged for study"><div class="caption">A supportive environment for learning and growth</div></div></div></section>
+<div class="programme-strip container">
+  <a href="#courses"><span class="programme-icon">▤</span><span><strong>Classes I–X</strong><small>CBSE &amp; BSEB · School Subjects</small></span></a>
+  <a href="#courses"><span class="programme-icon">◆</span><span><strong>Classes XI–XII</strong><small>English · Grammar · Literature</small></span></a>
+  <a href="#courses"><span class="programme-icon">✦</span><span><strong>Spoken English</strong><small>Communication Confidence</small></span></a>
+  <a href="#courses"><span class="programme-icon">⌂</span><span><strong>Day Boarding</strong><small>Study Support</small></span></a>
+</div>
 <section id="about"><div class="container"><div class="head"><span class="eyebrow">About the academy</span><h2>Education with Purpose</h2><p>We aim to make learning meaningful, structured and accessible through consistent guidance and a focus on understanding.</p></div><div class="intro"><div><h3>Strong foundations for every learner</h3><p>Our academic support is designed to help students strengthen subject knowledge, practise regularly and approach school learning with greater confidence. We value discipline, curiosity, respectful communication and steady progress.</p><p>We encourage students to ask questions, learn from mistakes and build independent study habits.</p></div><div class="panel"><h3>Our Educational Priorities</h3><ul class="checks"><li>Concept clarity and regular revision</li><li>Practice suited to each class level</li><li>Supportive guidance and personal attention</li><li>Study habits, confidence and responsibility</li><li>Respectful communication with parents</li></ul></div></div></div></section>
 <section class="courses" id="courses"><div class="container"><div class="head"><span class="eyebrow">Academic programmes</span><h2>Classes & Courses</h2><p>Learning support organised by stage, with attention to the academic needs of each group.</p></div><div class="cards">
 <article class="card"><div class="num">01</div><h3>Classes I–V</h3><p>Foundation learning with support across school subjects, practice and regular revision.</p></article>
@@ -57,6 +145,63 @@ header .links{background:#ffffff}
 </div>
 </section>
 
+
+<section id="online-test" class="online-test">
+  <div class="container">
+    <div class="test-panel">
+      <div class="test-copy">
+        <span class="eyebrow">Practise • Check • Improve</span>
+        <h2>Online Practice Test</h2>
+        <p><strong>SELF TEST MODE:</strong> Choose class, subject and difficulty. Start a quick quiz, or ask ChatGPT to create a fresh level-wise question set for extra practice.</p>
+        <div class="test-meta"><span>✓ Instant score</span><span>✓ Self-practice</span><span>✓ Free to try</span></div>
+      </div>
+      <div class="test-box">
+        <label for="testClass">Choose Class</label>
+        <select id="testClass">
+          <option value="6">Class VI</option><option value="7">Class VII</option><option value="8">Class VIII</option><option value="9">Class IX</option><option value="10">Class X</option>
+        </select>
+        <label for="testSubject">Choose Subject</label>
+        <select id="testSubject"><option value="english">English</option><option value="maths">Mathematics</option><option value="science">Science</option></select>
+        <label for="testLevel">Choose Difficulty Level</label>
+        <select id="testLevel"><option value="easy">Easy — Basic</option><option value="medium" selected>Medium — Standard</option><option value="hard">Hard — Challenge</option></select>
+        <button class="btn primary submit" type="button" id="startTest">Start Self Test</button>
+        <button class="btn outline submit" style="margin-top:10px" type="button" id="askChatGPT">Create Level-wise Questions with ChatGPT ↗</button>
+        <p class="test-note">Self Test uses questions built into this website. The ChatGPT button opens ChatGPT with a ready-made prompt for your selected class, subject and level.</p>
+      </div>
+    </div>
+    
+    <details class="question-editor" id="questionEditor">
+      <summary>Teacher Corner: Add Your Own Questions</summary>
+      <p class="editor-note">Add questions for the selected subject. These custom questions are saved only in this browser on this device. They will not automatically appear on other phones or for other visitors.</p>
+      <form id="customQuestionForm">
+        <label for="customSubject">Subject</label>
+        <select id="customSubject" required><option value="english">English</option><option value="maths">Mathematics</option><option value="science">Science</option></select>
+        <label for="customClass">Class</label>
+        <select id="customClass" required><option value="6">Class VI</option><option value="7">Class VII</option><option value="8">Class VIII</option><option value="9">Class IX</option><option value="10">Class X</option></select>
+        <label for="customQuestion">Question</label>
+        <textarea id="customQuestion" required placeholder="Type your question here"></textarea>
+        <div class="custom-options">
+          <div><label for="customA">Option A</label><input id="customA" required></div>
+          <div><label for="customB">Option B</label><input id="customB" required></div>
+          <div><label for="customC">Option C</label><input id="customC" required></div>
+          <div><label for="customD">Option D</label><input id="customD" required></div>
+        </div>
+        <label for="customCorrect">Correct answer</label>
+        <select id="customCorrect" required><option value="0">Option A</option><option value="1">Option B</option><option value="2">Option C</option><option value="3">Option D</option></select>
+        <button class="btn primary" type="submit">Save Question</button>
+      </form>
+      <div class="custom-list-head"><strong>Your saved questions</strong><button type="button" class="btn outline" id="clearCustomQuestions">Delete My Custom Questions</button></div>
+      <div id="customQuestionList" class="custom-question-list"></div>
+    </details>
+
+<div id="quizArea" class="quiz-area" hidden>
+      <div class="quiz-head"><h3 id="quizTitle">Practice Test</h3><span id="questionCount"></span></div>
+      <form id="quizForm"></form>
+      <div id="quizResult" class="quiz-result" role="status" hidden></div>
+    </div>
+  </div>
+</section>
+
 <section id="approach"><div class="container"><div class="head"><span class="eyebrow">How we teach</span><h2>A Thoughtful Approach to Learning</h2><p>Good learning grows through clarity, practice and a classroom culture where students feel supported.</p></div><div class="approaches"><div class="approach"><span class="eyebrow">01 / Understand</span><h3>Clear Concepts</h3><p>Lessons focus on understanding ideas, not simply memorising answers.</p></div><div class="approach"><span class="eyebrow">02 / Practise</span><h3>Regular Application</h3><p>Practice and revision help students strengthen knowledge and identify areas for improvement.</p></div><div class="approach"><span class="eyebrow">03 / Progress</span><h3>Build Confidence</h3><p>Guidance and feedback encourage students to take responsibility for their learning.</p></div></div></div></section>
 <section class="admission" id="admission"><div class="container admission-grid"><div class="admission-copy"><span class="eyebrow">Admissions & enquiries</span><h2>Take the Next Step</h2><p>Interested in classes at Acharya Shiv Academy? Fill in the enquiry form. Your message will open in WhatsApp so you can review it and send it to the academy.</p><div class="details"><p><strong>Address</strong><br>Near Meenakshi Printing Press, Babu Saheb Colony, Laheriasarai, Darbhanga, Bihar</p><p><strong>Phone</strong><br>9798098535 · 9304224408</p></div></div>
 <form id="admissionForm"><div class="formgrid">
@@ -75,7 +220,156 @@ header .links{background:#ffffff}
 const menu=document.querySelector('.menu'),links=document.querySelector('.links');
 menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
 links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
+
+// Basic Teacher Corner password gate. Change this password before publishing if desired.
+const TEACHER_CORNER_PASSWORD = 'ASA@2026';
+const teacherCorner = document.getElementById('questionEditor');
+const teacherSummary = teacherCorner.querySelector('summary');
+teacherSummary.addEventListener('click', function(e){
+  if (sessionStorage.getItem('asaTeacherUnlocked') === 'yes') return;
+  e.preventDefault();
+  const entered = window.prompt('Teacher Corner password:');
+  if (entered === null) return;
+  if (entered === TEACHER_CORNER_PASSWORD) {
+    sessionStorage.setItem('asaTeacherUnlocked','yes');
+    teacherCorner.open = true;
+    alert('Teacher Corner unlocked.');
+  } else {
+    alert('Incorrect password. Please try again.');
+    teacherCorner.open = false;
+  }
+});
 document.getElementById('admissionForm').addEventListener('submit',function(e){e.preventDefault();const d=new FormData(this);const msg=['Admission Enquiry — Acharya Shiv Academy','Student: '+d.get('student'),'Parent/Guardian: '+d.get('parent'),'Mobile: '+d.get('phone'),'Class/Course: '+d.get('class'),'Board: '+(d.get('board')||'Not specified'),'Subject/Course details: '+(d.get('subject')||'Not specified'),'Message: '+(d.get('message')||'None')].join('\n');window.open('https://wa.me/919798098535?text='+encodeURIComponent(msg),'_blank','noopener');});
+
+const sampleQuestions = {
+ english: [
+  {q:'Choose the correct sentence.',o:['She go to school.','She goes to school.','She going to school.','She gone to school.'],a:1},
+  {q:'What is the opposite of “brave”?',o:['Courageous','Fearless','Cowardly','Bold'],a:2},
+  {q:'Choose the correct plural of “child”.',o:['Childs','Children','Childes','Childrens'],a:1},
+  {q:'Choose the correct past tense of “write”.',o:['Writed','Written','Wrote','Writing'],a:2},
+  {q:'Identify the noun in: “The teacher smiled.”',o:['The','Teacher','Smiled','None'],a:1},
+  {q:'Choose the correctly spelled word.',o:['Beautifull','Beutiful','Beautiful','Beautifal'],a:2},
+  {q:'Fill in the blank: I ___ reading a book now.',o:['am','is','are','be'],a:0},
+  {q:'Which word is a synonym of “rapid”?',o:['Slow','Quick','Weak','Late'],a:1},
+  {q:'Choose the correct article: He ate ___ apple.',o:['a','an','thee','no article'],a:1},
+  {q:'Which punctuation mark ends a direct question?',o:['Comma','Full stop','Question mark','Colon'],a:2}
+ ],
+ maths: [
+  {q:'What is 15 × 6?',o:['80','85','90','95'],a:2},
+  {q:'Solve: x + 7 = 12.',o:['3','4','5','6'],a:2},
+  {q:'What is the perimeter of a square with side 4 cm?',o:['8 cm','12 cm','16 cm','20 cm'],a:2},
+  {q:'What is 144 ÷ 12?',o:['10','11','12','14'],a:2},
+  {q:'What is 3/4 of 20?',o:['10','12','15','16'],a:2},
+  {q:'Simplify: 7 + 3 × 2.',o:['20','13','17','14'],a:1},
+  {q:'A triangle has angles 60° and 50°. What is the third angle?',o:['60°','70°','80°','90°'],a:1},
+  {q:'What is the square of 9?',o:['18','72','81','99'],a:2},
+  {q:'Convert 2.5 metres into centimetres.',o:['25 cm','200 cm','250 cm','2500 cm'],a:2},
+  {q:'If one pen costs ₹8, what is the cost of 6 pens?',o:['₹14','₹36','₹42','₹48'],a:3}
+ ],
+ science: [
+  {q:'Which organ pumps blood around the human body?',o:['Lungs','Heart','Kidneys','Stomach'],a:1},
+  {q:'Which gas do plants absorb during photosynthesis?',o:['Oxygen','Nitrogen','Carbon dioxide','Hydrogen'],a:2},
+  {q:'Water freezes at what temperature on the Celsius scale?',o:['0°C','10°C','50°C','100°C'],a:0},
+  {q:'Which part of a plant absorbs most water from the soil?',o:['Flower','Leaf','Root','Fruit'],a:2},
+  {q:'Which force pulls objects towards Earth?',o:['Friction','Gravity','Magnetism','Buoyancy'],a:1},
+  {q:'Which of these is a good conductor of electricity?',o:['Rubber','Plastic','Copper','Dry wood'],a:2},
+  {q:'What is the main source of energy for Earth?',o:['Moon','Sun','Wind','Coal'],a:1},
+  {q:'Which state of matter has a fixed shape and fixed volume?',o:['Solid','Liquid','Gas','Vapour'],a:0},
+  {q:'Which vitamin can the body make with help from sunlight?',o:['Vitamin A','Vitamin B12','Vitamin C','Vitamin D'],a:3},
+  {q:'Which simple machine is commonly used to lift water from a well?',o:['Pulley','Thermometer','Compass','Microscope'],a:0}
+ ]
+};
+function shuffleQuestions(items) {
+  const copy = items.slice();
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+document.getElementById('askChatGPT').addEventListener('click',function(){
+ const cls=document.getElementById('testClass').value;
+ const subject=document.getElementById('testSubject').value;
+ const level=document.getElementById('testLevel').value;
+ const subjectName={english:'English',maths:'Mathematics',science:'Science'}[subject];
+ const levelName={easy:'Easy (basic concepts)',medium:'Medium (school standard)',hard:'Hard (challenging, application-based)'}[level];
+ const prompt='Create a fresh online self-test for an Indian school student: Class '+cls+', subject '+subjectName+', difficulty '+levelName+'. Give 10 multiple-choice questions with four options (A-D), then provide the answer key with brief explanations at the end. Keep questions age-appropriate and aligned with the school level. Do not show answers immediately after each question.';
+ window.open('https://chatgpt.com/?q='+encodeURIComponent(prompt),'_blank','noopener');
+});
+
+document.getElementById('startTest').addEventListener('click',function(){
+ const cls=document.getElementById('testClass').value;
+ const subject=document.getElementById('testSubject').value;
+ const level=document.getElementById('testLevel').value;
+ const names={english:'English',maths:'Mathematics',science:'Science'};
+ const levelNames={easy:'Easy',medium:'Medium',hard:'Hard'};
+ const custom = loadCustomQuestions().filter(q => q.subject === subject && q.className === cls);
+ let pool=sampleQuestions[subject].concat(custom);
+ // The built-in sample bank is introductory; difficulty is shown in the test title.
+ // For fresh class-specific questions at the chosen level, use the ChatGPT button.
+ const questions=shuffleQuestions(pool).slice(0,5);
+ const area=document.getElementById('quizArea');
+ document.getElementById('quizTitle').textContent='Class '+cls+' — '+names[subject]+' · '+levelNames[level]+' Self Test';
+ document.getElementById('questionCount').textContent=questions.length+' questions';
+ const form=document.getElementById('quizForm');
+ form.innerHTML='';
+ document.getElementById('quizResult').hidden=true;
+ questions.forEach((item,i)=>{
+   const box=document.createElement('div');box.className='quiz-question';
+   const prompt=document.createElement('p');prompt.textContent=(i+1)+'. '+item.q;box.appendChild(prompt);
+   item.o.forEach((opt,j)=>{
+     const label=document.createElement('label');label.className='quiz-option';
+     const radio=document.createElement('input');radio.type='radio';radio.name='q'+i;radio.value=String(j);radio.required=true;
+     label.appendChild(radio);label.appendChild(document.createTextNode(opt));box.appendChild(label);
+   });
+   form.appendChild(box);
+ });
+ const btn=document.createElement('button');btn.type='submit';btn.className='btn primary quiz-submit';btn.textContent='Submit Test';form.appendChild(btn);
+ form.onsubmit=function(e){e.preventDefault();let score=0;questions.forEach((q,i)=>{const picked=form.querySelector('input[name="q'+i+'"]:checked');if(picked&&Number(picked.value)===q.a)score++;});const result=document.getElementById('quizResult');result.textContent='Your score: '+score+' / '+questions.length+'. '+(score===questions.length?'Excellent work!':'Keep practising and try again.');result.hidden=false;result.scrollIntoView({behavior:'smooth',block:'center'});};
+ area.hidden=false;area.scrollIntoView({behavior:'smooth',block:'start'});
+});
+
+
+const CUSTOM_QUESTIONS_KEY='asa_custom_test_questions_v1';
+function loadCustomQuestions(){
+  try{return JSON.parse(localStorage.getItem(CUSTOM_QUESTIONS_KEY)||'[]');}
+  catch(e){return [];}
+}
+function renderCustomQuestions(){
+  const list=document.getElementById('customQuestionList');
+  const items=loadCustomQuestions();
+  list.innerHTML='';
+  if(!items.length){list.textContent='No custom questions saved on this device yet.';return;}
+  items.forEach(item=>{
+    const row=document.createElement('div');row.className='custom-question-item';
+    const text=document.createElement('span');
+    text.textContent='Class '+item.className+' · '+({english:'English',maths:'Mathematics',science:'Science'}[item.subject])+': '+item.q;
+    const del=document.createElement('button');del.type='button';del.className='btn outline';del.textContent='Delete';
+    del.addEventListener('click',()=>{localStorage.setItem(CUSTOM_QUESTIONS_KEY,JSON.stringify(loadCustomQuestions().filter(q=>q.id!==item.id)));renderCustomQuestions();});
+    row.appendChild(text);row.appendChild(del);list.appendChild(row);
+  });
+}
+document.getElementById('customQuestionForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const question={
+    id:String(Date.now())+Math.random().toString(16).slice(2),
+    subject:document.getElementById('customSubject').value,
+    className:document.getElementById('customClass').value,
+    q:document.getElementById('customQuestion').value.trim(),
+    o:[document.getElementById('customA').value.trim(),document.getElementById('customB').value.trim(),document.getElementById('customC').value.trim(),document.getElementById('customD').value.trim()],
+    a:Number(document.getElementById('customCorrect').value)
+  };
+  if(!question.q||question.o.some(x=>!x)){alert('Please fill in the question and all four options.');return;}
+  const all=loadCustomQuestions();all.push(question);
+  try{localStorage.setItem(CUSTOM_QUESTIONS_KEY,JSON.stringify(all));}
+  catch(err){alert('Could not save this question in this browser. Please check available storage.');return;}
+  this.reset();renderCustomQuestions();alert('Your question has been saved on this device.');
+});
+document.getElementById('clearCustomQuestions').addEventListener('click',()=>{
+  if(confirm('Delete all custom questions saved on this device?')){localStorage.removeItem(CUSTOM_QUESTIONS_KEY);renderCustomQuestions();}
+});
+renderCustomQuestions();
+
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body></html>
